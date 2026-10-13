@@ -1,238 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daniel Lin — Software Engineering &amp; XR</title>
-    <meta
-      name="description"
-      content="Daniel Lin is a December 2026 computer science new grad in New York, focused on software engineering and game/XR development."
-    />
-    <meta name="theme-color" content="#16181c" />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <a class="wordmark" href="#top">Daniel Lin</a>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-nav"
-        >
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="visually-hidden">Menu</span>
-        </button>
-        <nav id="site-nav" class="site-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Lin - Student & Project Lead @ Studio X </title>
+    <meta name="description" content="BSc Computer Science @ University of Rochester
+I like working on Games & 3D Art">
+    
+    <style>
+            :root { --bg: #ffffff; --text: #1f2937; --accent: #3b82f6; --card-bg: #f9fafb; --card-border: 0; --font-main: 'Inter', sans-serif; }
+            body { background: var(--bg); color: var(--text); font-family: var(--font-main); margin: 0; line-height: 1.6; }
+            a { color: var(--accent); text-decoration: none; }
+            a:hover { text-decoration: underline; }
+            .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+            header { text-align: center; padding: 4rem 1rem; position: relative; }
+            
+            .profile-img { width: 120px; height: 120px; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--accent); }
+            .profile-img { border-radius: 50%; }
+            h1 { font-size: 2.5rem; margin: 0 0 0.5rem 0;  }
+            h2 { border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-top: 3rem; display: inline-block; }
+            .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+            .card { background: var(--card-bg); border: var(--card-border); padding: 1.5rem; border-radius: 8px; transition: transform 0.2s; }
+            .card:hover { transform: translateY(-3px); }
+            .skill-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+            .skill-tag { background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.9rem; font-weight: bold; }
+            details { background: var(--card-bg); border: var(--card-border); padding: 1rem; border-radius: 6px; margin-bottom: 0.5rem; cursor: pointer; }
+            summary { font-weight: bold; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+            summary::after { content: '+'; font-size: 1.2rem; }
+            details[open] summary::after { content: '-'; }
+            @media(min-width: 800px) {
+                body.layout-sidebar { display: grid; grid-template-columns: 300px 1fr; }
+                body.layout-sidebar header { height: 100vh; position: sticky; top: 0; text-align: left; padding: 3rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(0,0,0,0.1); }
+                body.layout-sidebar main { padding: 3rem; }
+            }
+            footer { text-align: center; padding: 4rem 1rem 2rem; font-size: 0.8rem; opacity: 0.6; }
+        </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body class="layout-sidebar">
+    <header class="">
+        
+        
+            
+            <h1>Daniel Lin</h1>
+            <div class="subtitle">Student & Project Lead @ Studio X </div>
+            <div class="socials">
+                <a href="mailto:daniellintbls@gmail.com">Email</a> &bull; 
+                <a href="https://github.com/unsophisticat" target="_blank">GitHub</a> &bull; 
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        
+        
     </header>
-
-    <main id="main">
-      <section id="top" class="hero" aria-labelledby="hero-name">
-        <div class="wrap hero-inner">
-          <p class="eyebrow">New York, NY · University of Rochester</p>
-          <h1 id="hero-name">Daniel Lin</h1>
-          <p class="tagline">
-            CS new grad (Dec 2026) focused on software engineering and
-            game/XR development — Unity, C#, and collaborative studio work on
-            Meta Quest.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View projects</a>
-            <a class="btn btn-ghost" href="mailto:dlin31@u.rochester.edu"
-              >Email me</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section" aria-labelledby="about-heading">
-        <div class="wrap section-grid">
-          <div>
-            <p class="section-kicker">About</p>
-            <h2 id="about-heading">Software and immersive work, built with a team.</h2>
-          </div>
-          <div class="prose">
-            <p>
-              I’m a computer science student at the University of Rochester,
-              expected to graduate in December 2026. I am based in New York, NY.
-            </p>
-            <p>
-              My focus sits between software engineering and game/XR
-              development. I write C# systems in Unity, model assets in Blender,
-              and help ship experiences for Meta Quest.
-            </p>
-            <p>
-              At Mary Ann Mavrinac Studio X, I work as an XR Developer and
-              Project Lead on collaborative teams — puzzles, interaction
-              systems, and comfort-minded VR layouts, built together with
-              fellow developers and artists.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
-        <div class="wrap">
-          <p class="section-kicker">Projects</p>
-          <h2 id="projects-heading">Two shipped VR experiences.</h2>
-          <p class="section-lead">
-            Team-built Meta Quest work from Studio X and Dandy Hacks — systems,
-            modeling, and playable rooms.
-          </p>
-
-          <div class="project-list">
-            <article class="project-card">
-              <div class="project-meta">
-                <p class="project-label">VR escape room · Meta Quest</p>
-                <h3>Xscape the Cave</h3>
-                <p class="project-role">
-                  Project Lead (Summer 2026) · Coding &amp; Modeling (Fall 2025–Spring
-                  2026) · Studio X
-                </p>
-              </div>
-              <ul class="highlights">
-                <li>Shipped a Meta Quest VR escape room with a collaborative Studio X team.</li>
-                <li>Developed C# systems for 8 multi-stage puzzles.</li>
-                <li>
-                  Contributed Blender assets in a 100+ original model and texture
-                  pipeline.
-                </li>
-              </ul>
-              <p class="stack">Unity · XR Interaction Toolkit · C# · Blender</p>
-              <div class="project-links">
-                <a
-                  href="https://www.library.rochester.edu/studio-x/projects/studio-x-xscape-cave"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Library page</a
-                >
-                <a
-                  href="https://github.com/RCL-Studio-X/Studio-X-Escape-Room"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-meta">
-                <p class="project-label">VR reaction training · Hackathon</p>
-                <h3>./space_re:ACT</h3>
-                <p class="project-role">
-                  XR Developer &amp; 3D Modeler · 4-person team · Dandy Hacks 2025
-                  (42-hour hackathon)
-                </p>
-              </div>
-              <ul class="highlights">
-                <li>Built cockpit interaction systems for a VR reaction-training game.</li>
-                <li>Modeled cockpit controls and UI from scratch in Blender.</li>
-                <li>
-                  1st Place, Creative Immersive Technology, and Best Business
-                  Potential, out of 24 teams.
-                </li>
-              </ul>
-              <p class="stack">Unity · XR Toolkit · C# · Blender</p>
-              <div class="project-links">
-                <a
-                  href="https://devpost.com/software/roket"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Devpost</a
-                >
-                <a
-                  href="https://github.com/rayyyrayy/DandyHacks-SpaceSimulator"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section" aria-labelledby="skills-heading">
-        <div class="wrap">
-          <p class="section-kicker">Skills</p>
-          <h2 id="skills-heading">Tools used on shipped work.</h2>
-          <div class="skill-groups">
-            <div>
-              <h3>XR &amp; software</h3>
-              <ul class="pills">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>XR Interaction Toolkit</li>
-                <li>Meta Quest</li>
-              </ul>
-            </div>
-            <div>
-              <h3>3D</h3>
-              <ul class="pills">
-                <li>Blender</li>
-                <li>Modeling</li>
-                <li>Texturing</li>
-              </ul>
-            </div>
-            <div>
-              <h3>How I work</h3>
-              <ul class="pills">
-                <li>Collaborative studio production</li>
-                <li>Puzzle and interaction systems</li>
-                <li>Comfort-first VR layout</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
-        <div class="wrap contact-inner">
-          <p class="section-kicker kicker-on-dark">Contact</p>
-          <h2 id="contact-heading">Let’s talk about software or XR roles.</h2>
-          <p class="contact-lead">
-            I’m looking for software engineering and game/XR opportunities.
-            Email is the fastest way to reach me.
-          </p>
-          <ul class="contact-list">
-            <li>
-              <span>Email</span>
-              <a href="mailto:dlin31@u.rochester.edu">dlin31@u.rochester.edu</a>
-            </li>
-            <li>
-              <span>LinkedIn</span>
-              <a
-                href="https://www.linkedin.com/in/daniel-lin36/"
-                rel="noopener noreferrer"
-                target="_blank"
-                >linkedin.com/in/daniel-lin36</a
-              >
-            </li>
-            <li>
-              <span>Location</span>
-              <span class="contact-plain">New York, NY</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <main class="">
+        <section><h2>About</h2><p style="font-size: 1.1rem;">BSc Computer Science @ University of Rochester<br>I like working on Games & 3D Art</p></section><section><h2>Skills</h2><div class="skill-cloud"><span class="skill-tag">Git</span><span class="skill-tag">C#</span><span class="skill-tag">C</span><span class="skill-tag">Java</span><span class="skill-tag">Python</span><span class="skill-tag">R</span><span class="skill-tag">Unity</span><span class="skill-tag">Blender</span></div></section><section><h2>Projects</h2><h3 style="margin-top:2rem; margin-bottom: 1rem; opacity:0.7; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Game Development</h3><div class="grid"><div class="card"><h3>Studio X: Xscape the Cave</h3><p>An interactive puzzle solving experience that adapts and reimagines iZone’s “Caving Gone Wrong: An Escape Room Experience” in VR! </p><a href="https://www.library.rochester.edu/studio-x/projects/studio-x-xscape-cave" target="_blank">View Project &rarr;</a></div><div class="card"><h3>./space_re:ACT</h3><p>VR reaction-training simulator built in 42 hours at DandyHacks 2025  hackathon. 1st Place winner in Creative Immersive Technology and Best Business Potential.</p><a href="https://devpost.com/software/roket" target="_blank">View Project &rarr;</a></div><div class="card"><h3>Book Nook</h3><p>A social hangout world published on VRChat, built in Unity with original 3D models!</p><a href="https://vrchat.com/home/world/wrld_ceb84fd8-6ee2-4f5c-a398-f0b9f48c87b3/info" target="_blank">View Project &rarr;</a></div></div><h3 style="margin-top:2rem; margin-bottom: 1rem; opacity:0.7; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Research</h3><div class="grid"><div class="card"><h3>Photo-Tactile VR</h3><p>
+An interactive VR experience to visualize material textures for photoacoustic haptics experiments 
+</p><a href="https://www.library.rochester.edu/studio-x/projects/photo-tactile-vr" target="_blank">View Project &rarr;</a></div></div></section>
+        <footer>
+            <p>&copy; 2026 Daniel Lin</p>
+            <p>Created using <a href="https://pierrecochart.github.io/github-website-builder/" target="_blank">github website builder</a></p>
+        </footer>
     </main>
-
-    <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <p>Daniel Lin · University of Rochester · Expected Dec 2026</p>
-      </div>
-    </footer>
-
-    <script src="./script.js"></script>
-  </body>
+</body>
 </html>
