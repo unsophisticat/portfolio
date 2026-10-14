@@ -3,62 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Lin - Student & Project Lead @ Studio X </title>
-    <meta name="description" content="BSc Computer Science @ University of Rochester
-I like working on Games & 3D Art">
-    
+    <title>Daniel Lin - Student & Project Lead / Game Designer @ Studio X</title>
+    <meta name="description" content="BSc Computer Science @ University of Rochester. I like working on interactive things! Games & 3D Art">
     <style>
-            :root { --bg: #ffffff; --text: #1f2937; --accent: #3b82f6; --card-bg: #f9fafb; --card-border: 0; --font-main: 'Inter', sans-serif; }
-            body { background: var(--bg); color: var(--text); font-family: var(--font-main); margin: 0; line-height: 1.6; }
-            a { color: var(--accent); text-decoration: none; }
-            a:hover { text-decoration: underline; }
-            .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-            header { text-align: center; padding: 4rem 1rem; position: relative; }
-            
-            .profile-img { width: 120px; height: 120px; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--accent); }
-            .profile-img { border-radius: 50%; }
-            h1 { font-size: 2.5rem; margin: 0 0 0.5rem 0;  }
-            h2 { border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-top: 3rem; display: inline-block; }
-            .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
-            .card { background: var(--card-bg); border: var(--card-border); padding: 1.5rem; border-radius: 8px; transition: transform 0.2s; }
-            .card:hover { transform: translateY(-3px); }
-            .skill-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-            .skill-tag { background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.9rem; font-weight: bold; }
-            details { background: var(--card-bg); border: var(--card-border); padding: 1rem; border-radius: 6px; margin-bottom: 0.5rem; cursor: pointer; }
-            summary { font-weight: bold; list-style: none; display: flex; align-items: center; justify-content: space-between; }
-            summary::after { content: '+'; font-size: 1.2rem; }
-            details[open] summary::after { content: '-'; }
-            @media(min-width: 800px) {
-                body.layout-sidebar { display: grid; grid-template-columns: 300px 1fr; }
-                body.layout-sidebar header { height: 100vh; position: sticky; top: 0; text-align: left; padding: 3rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(0,0,0,0.1); }
-                body.layout-sidebar main { padding: 3rem; }
-            }
-            footer { text-align: center; padding: 4rem 1rem 2rem; font-size: 0.8rem; opacity: 0.6; }
-        </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&family=VT323&display=swap" rel="stylesheet">
+        :root { --bg: #ffffff; --text: #1f2937; --accent: #3b82f6; --card-bg: #f9fafb; --card-border: 0; --font-main: 'Inter', sans-serif; }
+        body { background: var(--bg); color: var(--text); font-family: var(--font-main); margin: 0; line-height: 1.6; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        header { text-align: center; padding: 4rem 1rem; position: relative; }
+        h1 { font-size: 2.5rem; margin: 0 0 0.5rem 0; }
+        h2 { border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-top: 3rem; display: inline-block; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 528px)); gap: 1.5rem; max-width: calc(2 * 528px + 1.5rem); }
+        .card { background: var(--card-bg); border: var(--card-border); padding: 10px 1.25rem 10px 10px; border-radius: 8px; overflow: hidden; transition: transform 0.2s; display: flex; gap: 1.25rem; align-items: center; min-height: 205px; box-sizing: border-box; }
+        .card:hover { transform: translateY(-3px); }
+        .card img { width: 185px; height: 185px; aspect-ratio: 1 / 1; align-self: center; object-fit: cover; border-radius: 10px; flex-shrink: 0; display: block; }
+        .card-body { padding: 0; display: flex; flex-direction: column; justify-content: center; }
+        .card-body h3 { margin: 0 0 0.25rem; }
+        .card-body p { margin: 0 0 0.25rem; }
+        .skill-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .skill-tag { background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.9rem; font-weight: bold; }
+        .category { margin-top: 2rem; margin-bottom: 1rem; opacity: 0.7; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+        @media(min-width: 800px) {
+            body.layout-sidebar { display: grid; grid-template-columns: 360px 1fr; }
+            body.layout-sidebar header { height: 100vh; position: sticky; top: 0; text-align: left; padding: 3rem 3.5rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(0,0,0,0.1); box-sizing: border-box; }
+            body.layout-sidebar main { padding: 3rem 6rem 3rem 4rem; max-width: 1150px; }
+        }
+        @media(min-width: 1100px) {
+            .intro-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+        }
+        footer { text-align: center; padding: 4rem 1rem 2rem; font-size: 0.8rem; opacity: 0.6; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="layout-sidebar">
-    <header class="">
-        
-        
-            
-            <h1>Daniel Lin</h1>
-            <div class="subtitle">Student & Project Lead @ Studio X </div>
-            <div class="socials">
-                <a href="mailto:daniellintbls@gmail.com">Email</a> &bull; 
-                <a href="https://github.com/unsophisticat" target="_blank">GitHub</a> &bull; 
-                <a href="https://www.linkedin.com/in/daniel-lin36/" target="_blank">LinkedIn</a>
-            </div>
-        
-        
+    <header>
+        <h1>Daniel Lin</h1>
+        <div class="subtitle">Student & Project Lead / Game Designer @ Studio X</div>
+        <div class="socials">
+            <a href="mailto:daniellintbls@gmail.com">Email</a> &bull;
+            <a href="https://github.com/unsophisticat" target="_blank">GitHub</a> &bull;
+            <a href="https://www.linkedin.com/in/daniel-lin36/" target="_blank">LinkedIn</a>
+        </div>
     </header>
-    <main class="">
-        <section><h2>About</h2><p style="font-size: 1.1rem;">BSc Computer Science @ University of Rochester<br>I like working on Games & 3D Art</p></section><section><h2>Skills</h2><div class="skill-cloud"><span class="skill-tag">Git</span><span class="skill-tag">C#</span><span class="skill-tag">C</span><span class="skill-tag">Java</span><span class="skill-tag">Python</span><span class="skill-tag">R</span><span class="skill-tag">Unity</span><span class="skill-tag">Blender</span></div></section><section><h2>Projects</h2><h3 style="margin-top:2rem; margin-bottom: 1rem; opacity:0.7; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Game Development</h3><div class="grid"><div class="card"><h3>Studio X: Xscape the Cave</h3><p>An interactive puzzle solving experience that adapts and reimagines iZone’s “Caving Gone Wrong: An Escape Room Experience” in VR! </p><a href="https://www.library.rochester.edu/studio-x/projects/studio-x-xscape-cave" target="_blank">View Project &rarr;</a></div><div class="card"><h3>./space_re:ACT</h3><p>VR reaction-training simulator built in 42 hours at DandyHacks 2025  hackathon. 1st Place winner in Creative Immersive Technology and Best Business Potential.</p><a href="https://devpost.com/software/roket" target="_blank">View Project &rarr;</a></div><div class="card"><h3>Book Nook</h3><p>A social hangout world published on VRChat, built in Unity with original 3D models!</p><a href="https://vrchat.com/home/world/wrld_ceb84fd8-6ee2-4f5c-a398-f0b9f48c87b3/info" target="_blank">View Project &rarr;</a></div></div><h3 style="margin-top:2rem; margin-bottom: 1rem; opacity:0.7; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Research</h3><div class="grid"><div class="card"><h3>Photo-Tactile VR</h3><p>
-An interactive VR experience to visualize material textures for photoacoustic haptics experiments 
-</p><a href="https://www.library.rochester.edu/studio-x/projects/photo-tactile-vr" target="_blank">View Project &rarr;</a></div></div></section>
+    <main>
+        <div class="intro-row">
+            <section>
+                <h2>About</h2>
+                <p style="font-size: 1.1rem;">BSc Computer Science @ University of Rochester<br>I like working on interactive things!<br>Games & 3D Art</p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <div class="skill-cloud">
+                    <span class="skill-tag">Git</span><span class="skill-tag">C#</span><span class="skill-tag">C</span><span class="skill-tag">Java</span><span class="skill-tag">Python</span><span class="skill-tag">R</span><span class="skill-tag">Unity</span><span class="skill-tag">Blender</span>
+                </div>
+            </section>
+        </div>
+        <section>
+            <h2>Projects</h2>
+            <h3 class="category">Game Development</h3>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/xscape.jpg" alt="Xscape the Cave VR escape room">
+                    <div class="card-body">
+                        <h3>Studio X: Xscape the Cave</h3>
+                        <p>An interactive puzzle solving experience that adapts and reimagines iZone’s “Caving Gone Wrong: An Escape Room Experience” in VR!</p>
+                        <a href="https://www.library.rochester.edu/studio-x/projects/studio-x-xscape-cave" target="_blank">View Project &rarr;</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/spacereact.jpg" alt="./space_re:ACT VR cockpit">
+                    <div class="card-body">
+                        <h3>./space_re:ACT</h3>
+                        <p>VR reaction-training simulator built in 42 hours at DandyHacks 2025 hackathon. 1st Place winner in Creative Immersive Technology and Best Business Potential.</p>
+                        <a href="https://devpost.com/software/roket" target="_blank">View Project &rarr;</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/booknook.jpg" alt="Book Nook VRChat world">
+                    <div class="card-body">
+                        <h3>Book Nook</h3>
+                        <p>A social hangout world published on VRChat, built in Unity with original 3D models!</p>
+                        <a href="https://vrchat.com/home/world/wrld_ceb84fd8-6ee2-4f5c-a398-f0b9f48c87b3/info" target="_blank">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="category">Research</h3>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/phototactile.jpg" alt="Photo-Tactile VR">
+                    <div class="card-body">
+                        <h3>Photo-Tactile VR</h3>
+                        <p>An interactive VR experience to visualize material textures for photoacoustic haptics experiments</p>
+                        <a href="https://www.library.rochester.edu/studio-x/projects/photo-tactile-vr" target="_blank">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer>
             <p>&copy; 2026 Daniel Lin</p>
-            <p>Created using <a href="https://pierrecochart.github.io/github-website-builder/" target="_blank">github website builder</a></p>
+            <p>Modified Template from <a href="https://pierrecochart.github.io/github-website-builder/" target="_blank">github website builder</a></p>
         </footer>
     </main>
 </body>
